@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+</head>
+<body>
+    <img id="bg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZwAAAB6CAMAAAC89RUgAAAApVBMVEX///8AAAD4+Pj8/PzR0dH39/ft7e3x8fH09PTm5ubq6urv7+/b29vi4uLf39/Ozs7IyMh2dnZra2u2traamppXV1eNjY03NzeysrIlJSVKSkpERESRkZHJyclTU1O9vb2oqKh/f38dHR1iYmI6Ojpubm6pqakVFRUrKyuFhYVGRkYoKCifn58MDAwyMjJ6enp3dXCKiYOzs60dIh5ASEQwNjI7RD9vmvMnAAAgAElEQVR4nO1diZqiPJdO2EFAkEUEBBREsVDn/2a5/0ubrBDQqu6utrrrn/E8T5XIEpK8ydkTAXjRr5AsyX+7Ci960Yte9KIXvehFL3rRi170ohe96EUvetGLXvSiFy20v12DF71LCbz20t+uxN8iJ2iT0vnbtfiAMgjbv12Hv0PlFVJa/uBGOYLw+HbaQLg2/kjNBuohVP7sG78J7SC8ldskhdD78c0mBvH29ZWaUQXf/vBw+B6UQ1iSg91PDc4a8vv/JMUw/+PvvCfbUf/sC9FUKNghtHEF7JnkXdiTr6s7cEyvLMuteVeyXQal55JDTROSA1wd/TPYGXm8sNDJh2TRCxath07OFlAf7nM8VK7yp/QDK+gOIT0s+7Jd/axklu875NcphMOg7PDMieBxj2iDiXxerpP7/Sk41u2NCazTzZ2Uu6GnGzzYEp+USAsmY6DcbfZvb/ie/TWi7LT3j5u3t2Oak3434wJ93RwP+GXqOHHKNS13/4zG/5jkm6LLQYIPtQ79W1Q/+aD6IwH+M3QYRQjW1/QNPF7XWYq7oEmz5gRhOrkfgzPKJiSo33p74SYR7rBwvA1xv1ZT7QNcU05g4/481HXRwCPt1gU681YlHX5wRx/a4pdOyoAVOfI2fILFEMaOYSFe/GfAsUibbng2h4SFxOR02bXWxw9Kz1BgEDgbQdY60DZUVQIB6hhFliR1sfsAHKRLxIy/eFjli3gf3uCRcsNbw9gXulrjT3l5ZRblkZ6xGnSpJ2dMdCoaXxUOCmTBWWsJYUAOgv0POud3yaKDSiF9vIh106awVPi9ba8q3ce6/VPAwSN3NX4NevY5YgAn94vgdLR7KVl7dMWnx/YwGbQzBU+CQ7+vFvRzz8B08dwhZ8y9WKAADnsCyFd4ZIfFl5plVtXtyKs9OizCPM8p165aEyikk+LFe09jego4Hu6aURUy2EQQwJmKfwEcfI8w6ZZwEEeCINvdgcN7lYNDiiTyfgZOf2d6OUi0scP8K9ma4ptA7hOge7f5BFXLLqdDMP9weDwFHCmDIj/iFMB3zJ4RHAnxo068hCfhnh+dZ6+BE46FacNfW0EmQX4IDsb/T7jZKlKdvuvKBdYn9d5fmv2iB1qPp49BR+QfAAezcURnfXr2J8Dx5rc4kJ8JJ7OR1PXyPjilyNYEFvtw5sxL+RJqCQuT0X85PCjALgLHhuVBLjzfaW3WVSGpvN4+TiF+DjhkwEN4nBb2E+Bgi2c66bFmTMSmgks8iGP8o5mT8An3Q3BUrLdnX+/ICWgLjdwzTjZ6HezNbXf2zdrujSs4LhOkLRg+ukkNfYTZoyKeBI5cE3QuEyb+Y3AWSMs+Tq/dMCTkiGjWTLGidYUDx+LFDuDsuFcTg3MYn2nv3X0hKTf/agtUJwq0WgeRcjsg7gXDcNuXvlzkR+1iHPu1XCLhmsTJDukLlq8/KOJJ4ADZJ03eiNrHj8HBLGYzvdYP08PdkyLrAXAMzinuEBXcIcHBsYc5hcFZ5zGjPHrgi01Judftpxv7MekV1s7UWgGoZmYNnFWCNTOLcQg5cJd97116sArRhJFLMriU8EFJzwKHjF04kcU/AY57Dw7iT9xkVagdf+FCU4IDMXWbg6NdB3XE3MM5zcFZNHA+KZ9Ii1WZrJJlvQAlVmh2t8gDSPqbS68MgqAst7g5Nijc9txZFjfxykfOgOeBQ8Y8hIL/5efAmbG1QBAsTkanI9O1CVuTFpaj1DG7A4Mj9Su4Gaw5DE5kLxkp+QNwaAXeq9xv0qLGo0RB9al8Dys0igH0xK9bzzYX+sK0t8FtRTS5pjLVtE9phx0ecdkngkN1tt34/cfgkODBVCFIoCgzWtKJTMCPCoHN30JmzsTPOlMIqofgAIV47ZovWGcVspG0TMA6drFDbXvo5r1ghwW6kuRJXFgAI2BUj8p6JjjYaQWLscEfgkMsTawQzG6puLZGSScsiEpLeQDHvFMIBvo5cKieCL9A7Ni0asEqSAx400B7KB8Oga2PWplErhykSBTkD2F4KjgA9fVpVDt+DA72yk2NUALwpDdHkf6RKj3QD41QTuF0mj+LVFrmzk0iWwV2LXSA2fciUG4dAKv39uEBzaKVA6wy7KdlPQMcexip1a+CQxw/k2tIzFwmJ4xBdD8AZz+Zqph+Ghz8psPjK79FZYUmgmtdkwjIXT9WTm9LtyxLMbIV3BYgMU89iNGtu7A0gqmO8hRwhh4r79jaw4CnP/S3jEW+qEUOUCyGUd3wUgQ7h9MnwPG5au6PSt8zKUlAmHeuVCLdwAGa7VJaVliXXrZdqbUloWAJFn4J1Cs49ECWiayKJ46lp4Bz4q7LcsKkkik4Ssnl9ggOVSIEz2fPg6pazTs94zqDCE5CDaoj0run4DjvhQw4RbzFty/JxnHRUOuvVVACZYWsmIRC4yCD00TngLtYlo5FCLsNQJgAaRUaGesObTJcngLOAAGSD4InDwvjZPimjOJBjIRix082oIN1azp4tA2rGVID1qNXmvlC5ZredUHgTJVQ9zLGzAEFZyL25Ywz9hQenxvP6fP8Vvk4hhM0PvCwWqOXCqVdBdytogAzPAWWSagkrW5D4NjFG1NxggmneQ44Fzo4w6mrEnfMKOKwesQ4ykGcUsQPzUTT9gJPDF3z2Fj8ZlZHdbRN2jU9hU6spwkTNpzEXbs5a5UyBlYy5ae/Ty6SHIZiGeh1hgeWhC17pUeozHOAjC8bzZxAIRbYdsnGbdIjNlAUpFJyPCnxOeDAS7e0vWim/kQTkyUeJgXBaRzOxHgtesUOaqQF80mETKBNaNvbaLTkt8ToSetDnTHO5czMXkD5pBDhLOY6mXpFJ5a2cpurib9LMmuq2vl2DUxaeGK7NiI3kD3LwV6AYNd61D72uOxrE5BcdRtdlOJpIswzwFG7E7W4I1E3i+smLdKsjhjLV1epwP3EkIoWFvT5azdWTs5ZmmLNamgX5yxNz81pf7lcYIXOWFGKzmRFvRvEzjLK0KmmqGnfdFGToq91JLQyoa41mD45OUup+FHZKCpDynIIB3MsJH0CHdhxaCLZT2l4MrZVuaqRVpAk0yKfY+fodlBV5TSuuLAMWZYMzRxkwlCdbO60kU3bKxVnmvOnOwrSPEe3p7lQZVk1dA1LU/qUjs/o1gi0ZOkSOUX1Be2uDvxlS+fp3gEfV18OZLB1QfcgxuoEbfhYq0emyMl1aknaTSs1A8fQrMXXJ70df5Gl/HvsZqMTTTKPlBUoH8/K93rWioG/w973bQJUobEiOEZSN9fT23WVB18a7DDuHGqPqfV33c2/7fznCu4vIw2ho6n2WjEeDj3dtZdbxTYf5ATnNqDiJoy7PBz6RgDHO6WBbVluWXxxQlc5jz+/R0j7bqs+Pv6bgAOQ/ry+tjw7bUKy11c25sfmMqzcu8vcfMPTZrR1RnDyUeUsIZ+Asu5YA9IyYuAqv0KYOT8vEQknDfNN0k1nwSaoZFD5N87XHSSKsLRwtGGi87tkcepLe+La2eb0LWM9pLE02bAczZCHSqmkEuO+XrjS+ElVHcuX2ctIhfEF6f5+AMYRjionDfUyFo5pPOQsSgkyABrLjO8ubUkmLCoSy0IpuEv7wTHt0mXOnntwFDH2xBxkctjA7AhrhpoTNeczM1wWdXPOWCX0A9KJzufznl3TuivEWbLpDtchKDJ8MYO8/Sbco+K13WnfXC4HNsg8cld6Pom+P3VDHtLISLOG6by4ZdmZPifnGdygV2U3LGqluskyUtntYOooddPUqJ/DM6lGk9KG4OPzhdjoqCHNOvNZRyyzrKkJEqthwiZp1rC57tWX4+kC9/XMR4lTHX0ZVHW4us+4MuItMFc70O9AVIJ8Z4B27pvoQNA3DXM4ciQ4OPJG9FrtCDj2hSgdixAWbNzUglHRCaZKDBPHVnxaaAV7oj7ZHcloRrbj0UTsloNj7FMDT84Kv8P0uX9LPsEtsgg60fXHwKGkCTFwhQHlwZhUyAmZKyJj0QVF8K/l1GC1YeG4dkC9BwVEBohS2/QCsh7tlJukMssUQRN81GyvFb2WXom1YHgNTfnl1TPyOg5x1ZetfBebWXQS6q0I1TZHJrWNerFHnTO9JzSVqPbohMx5x3Jwgokd7eKXmoN5X3IHii+AEwvghOR4SSrejqtAUmLt6/sjLo5mASHL/ybjXuU35Sz6Iq8vWBC6orIpvU3AGd0ySwqOPc72nB5FzH5SBLHW0360ieEq0yFbE42EKv8uuXVxZEqKClnW/U6wlDP6WDN47Sx6E2dvLB4TVbYCtjNPvJUD5wQ3WA/C4OxVcIWNoU8FqROCmnG1fBgTHJwUzhND5WbMB++Ylf0xOIRMWA2nS1I4Amdk0c4an5OEtVM1HaAInDstRJ2AcyyG6cBmzmV0Ezq0RQM4b+th3I/gjIXVgrpIwUFto8NzAOeWjqZyVtEmD52k0gawhkl0JKgRTujopimLakzyGF3sF8lpzj9OjjCtKWM8MBHnFqOKxsBR4R04iTCXXOYj9AU17h1w6jstWd8c5/IzF27asoAOnTkTQjOHfJJ6a0etGfOo8Zzs75XKAZyrPsSSHoGzEirgUHCqARzmt/PLhMdgQVoBzPDu4j+sYS7raD9NE2OmiVa6ccSI4NAVAQcxtgN2r5cTEzPALFa2QSJo2gwcG17miVMr0WlV0Jr7gtP5MTiLfTE3GR+AIwbYZKa4P5g5CJy2qtqUsDoNOhZfzmGTRzI4f2AE54ijSSxtPGPPfAxOz9omDeD04MZzg1LM1sr7fB3WMIu7BHUNKFMfDAlb6/0C+2iRcFsRv6xGmtGK3WJjfMsUBAJkDBwFHmfgaG8bYXp21KR/HxxcjOLgLrgLYOkbImGFhtmT9ToM+DUZHoo4gRE4YZ7fqGKvoRHnMHQIOPKQkD7SKHNIcggR+AM4mCnqdHqsSAxpSdrMwKkZzxzBCXF5tKYEnPg+psrh1leDoKmmY6wH8VtAWpaEXQn6LiRLzk00FmxROMkh8E+3SN4Ksn+YOXO25sKrAFdP+/x9cCCLNysDOBIuEHeBvhFTaDCVk2jzgUoHmkw2CVEztkazITE4mDeQdY0YHIsLByDjV5GbRHCQRL/i97ecrRGiTIekd8CM9K1DFB+HB3dGcPCta8rKipa0no9qXcY2FRpvo3kUdDqqAqrWVOTYngVJvM+1uVVoLl0idSJQiVMnxBaaYsixX/FZzWXOZc6/HbgRZEBFNYL3wSllddEAUYfV2uuVrH5EM8dQ1a3guC9hJrzJp9xifXEl1ZzkCDBtjfooNdI1CUHHpeAwnReoQXotyKiegINgT9Gkawe2ZqhGS5WkFTQl1dkxcI7panXkTHwA54bNOONCcoEiPH5uQ0aEsjute2nq80MT4uw1CZjm+bZqT9O/MrhfNxXorpsLbGhoytmKawwqw/DKFg0xye4qVhU2GLJ55El7g4ITIoQV7cePZM6SdME44Va0BCRzcCuEeKQ9Seqo6W1UIVDEBs9UaYW+Ct3nXghbG0vpWMR5Cg76ioZKMoCD/hsKqxp+Gc13c2DnKvngih3B6VhdWwZOPoYOrcnwIlRqkp8tO3najwmZpCcSFuQyB9f7gnMnNFGGJUZZpyxZhwHMwangdeYzrQUbDI1BMrB+rBAYmxFTpng/VAiEMXPi2tq9Kj01QpesKoXqkDWhxahP5nBu59BnGtTnyQ8VgpA0l/XUoK3dqLa8xKHUGmPvjULOmq1yRUIkN0C/3JnWBByrxCuQ0M0u46kUHJsw8RsQdYdysSzzni0cY54vBg4apIJHyFUwXOP7pSs9/gk7ZzdqBByc/R04nfAyi0ojeX2vGD8EB7WvdjbEMTQInffAAeYV9t4DcO7tHOvCcrJHO4c1pETqJE4tw1OVawRzcJQ49uhMdERwdMdeZKfr2wGpj9frdYOE/hv+XIIanfVB4o1tLi1rKalsTdV05mBRO+oJ1RJnWIxJZyW75rNpgSdZzC6rpG/IMY7umZfhsRk4AkKOoH+EFJSH4OyZnYNv1oYBUMADzS+4DryYg1PMwMFLFW60Hzk45B8DR6brSWPaRmoEGAM43KpBw7QmY7xnKsQcHDlucQ1l7OwXwJH/+Y/EAYZh6Eg86fhTBhL7VNGHAeJ//WtISSpN0Ee0m0vGYkevNBJcQwrc0SAN3DMOZR2ZYbWiQ8fBrekoYMTmYrOox0Bth5SbHQPnQmTOxOVUDRk3Crf9rg/AgZBUPcH10AbQjZRlCZjc7hnASQdweFNs7vVRqIpoktdFFJyetrNjZZAprMM3+uRtcM+1PI/BhxkLsU7A0RgfKJOuFNjaP/8Ymi0rtq2YQEcftmIBh3wagGQWgMR02oSvM1h4sVsrwGp3fKGbEM8JjjAtNUPV3ZpmeKPJhO1VtdxzozeDO03XdbJCewVX+DjHFbvBGzq0aOzZ20Dfxo73lIGD5iS62k7cFT08eSpey8KR1I7wbn3kAnFpzbLsy4J8GcSn1jC9185gtMSvYhofkl+U73oj0ksGzhJebFz3Lb2vR8dL0v0l9+4VsJOJD48+eBiXpHb83TukHliSrHoThYD7ydqstIwRnGSrmLZG8iDYwsycrQhTcDYkUtID2ShLpkAFurcDhy0oxo1FxEio1acQXtcbeGUMzsxP1/pQrLjnOmyKrEnTNVKy5f5cZOs0bfBeAW2R4vNHNhv1pDg2UXQqAoyx1WUpujGbTQzltslWq7RjiGi7LLvN/OjK6pyuT+vrBecXLndZEQ6pOQUrTA7q/bqImjOZAyDPshpP36TOVkNhHgHHPqS4GusM9wVqSJOl52OFL9dZQ8OQRn6tQ/uQNXhVgBGm53F1QMwHhhJf92l0Pt3EeJrBZo67CkuQD5LNaBFt14JC0AO6AnBBtLVuEZb/avmQrHQks8pJdtQsh0Czl0tF7EU0DUdZQaY0i7fp7FgWjsfHVNcejC5yVVInRgG54CqjeoHvUmd2MI2bsTgXXn487n4j/EiO7Ng2t/sW2PZFl9CfNBZGnie1k1k1NFphUj4OnC14GyUNRxB1gxq2+ujnEmpv2facAfdhoujYp9AqoBNa4ZbJtiyT+GZa6/X1dOzsaP92up41K7qFbf7PP5U9FBxKZZwowBAYzHNXGXxM8h0+/2dIVsobmmaYU/cT5Coz3x/C3tvajqYbiMsZC820t14V7q6KJ06/HKhJmsumYKz/SXDiZuX7/m13w/+LP7+n19cSsj6T6ECC1QIhJYDkqVo0uxCrA4gsLIJ8qkDxG0MQ3ip0sBz2gfmj4DRFHoZVA299mNd/YcO1ryV5BZJds08W05BBD/KIRAOSfHVugZ/6PZZkcnk1XLELSgU4ZV7hw908TP2LNGZ9gA93bxHJoUadT1XishqvjAPIXC7vU1MGMt7ZadDeztJdJvxT2yrz5+yl8tPV/mk6IMXAAyboJv59BWuHiq8R/01IcrdrYHe4yZXokzlIScFN3Jj1wSfBqUfHwxiVzvfwtMUpFfBCnb7hRDlmXbui4GgOWOzgkdzICnNX6JkGwkuNFOXgCuGKuvSRhvNGFOB28AjY6Fa2xtWs4Xn1BnkA0SsgFLNvQ3hcFZPFHskengu8zVhIloYy1RfHKX9HJpKggassz7o3W0ep6pAH2/ryP0k6f4Gd9J64+gGZR3LAI6/cgf85cLT9qOafRmeay0w/6omzK1SF+yTHlbDaDSeJqOaO70REjS+zI+4Da0wZ4DH0QEjb2LEgek+hNToehpDWx9FpjwxMnT7Jvc7mMWKm0Ab3gc9HRnv8rblk1fg9cbkLklmCh56TDHwbw99n/4WNHSRxjovFxAnXu+bgcJQ5Y/wcOIqw0ewV7seVAXRGMzcp3tfjeseJRHBo+Mokd4ejIRQZpLAhfMDseRzcHJJWOjo8+mFohAw5Yz0uMrAG/47LIs7qcSiBrJaUufvu+FuLd2U6BqzryXdBPI23uz1Q9shoNeHlvy//BU+qjBM81Ok8xTpaGZXAtZxtx9nb58BZ7cYIwzoaPIrWAA7vseg+MHoPDiFbiFkQw+wBOEmTDV77jswcQ8gdLagZL4ITZUMP9NQPcHgbbSVSVEk9a70QC/wESRVrBdA63ZllEeDvO+wP+M9z9j9oetSw4ktEOHklWB0RAzEPVd+OufufAce6mungPT9qB46OxsDxB3DcC5wL+HfA8YVFIRrNzHoAjjWkbcQEnJuwZFGhYVQBHE8UNSRKZ99n0NeYmyx+Knn7A+pZM4ND699lFVqdDeyiA2FX/7cHdjcNlLOcxBpUiYS0uqmU/hQ4wRnkg4/4ohkNa7LOumoEB0ExT4t+DI50lxgigMMd/Mmex6nRo4StTfZ5oJcEcCaZQDdck/x+6wEFTyn/d3c1dmJkyOQqyKrAR2DMrspljvQfkJY1MoRU2ctn2mW4BIGv1e5MXH0KnKxFXcdl88UE5huFwLgHx7vb22wKTmnoC7xlsXLH/0yYLemavWXKZc4FDEk1OQZnK2YmINUEC3cBnKOwWTF6cCUy3JE66C42v72swuvD3o6BF2muC5K7Ff5G0AcmVHbFwq56ZTYOjRsI9DZqgeZPrnwGHBv3FWc14OIScYsZiHQPjn0XMpyCs87WG5xd491t0W7C/aomtNrzmUPTNtaYAYYYnGCSSRaRSozgWJOUohIz33qomWnJhkkDPPAQP2mPIry8oK2RnbG7V/0kK4FOuw+U+20SD4jpRQmJLU3Q+Qw4VQ0kpBwxtnnBzfWILJDZ6gRf1K6L2dOzmaNbFs4zn84BTA/YWkCTcWCqDeCIGd7RbOZYUJw5Hr63HrTM1m/OzH3Sz7al+DwZHTAioKZAe7T9hAXtcvNgAVXogc5Qd3SrJnGFwmfAOW/wQku+ezNJ1WdJYgM4gxZg33X6vcyxVZIYMlO6H6rS7Cvq5p6ytZMw0jJS8oStCdpIiQXjAVb8uzvUbDnfeuLTdEAM+pDghDf70ZqifXWb8xFEQQUEt0glqASfAMe+KI7rOBGzmY58mftlAe5nTglni1AROKNLacxDkE/zX0F4HxwtQ/1MUgXlyRI5SEyWiUIgKEU9hq4fC3UHlmg/CxwSnJKrpXHLQfAAneTRHm9lDpJDMfRSLEi/T4AT0xEXsCSNI5sIHVwDGlUWxW69uU/zfQQOAnfkf/I7qjQDByfVhCXR1m5CpohGdcaJKn0eJ1aDlX8Ljlr+oII8CxweBDXT8qCAthrODw2OOAbyAFIZk1239xL9xQVPDDh+ApwLHY4qC+ce+asP8HAHjn2/wLCegEOmHcHiMs4xsnrIHNGag4NTuzvCIExh6oRUHTHWdC99jHA6Gjpsm5F82CtHBIcPA+O39jRmW66C1gZO6YHyxkfGbaVIsqQHNdzHLjpatMOvKFQVMOSyyDtg3eK87yd7Jvw6OB5PnGGB9QEcHIKV2QHPDDndjUk5EsDpKC/LabmDj4Dsku2M4BSitkZIObKrPcx0Xi/aFP1K+S3egckZUoF0vlXECqa0MGdgawoHR9+8zZTcXyPaWFZECJyaB4NPEF7Zj2bACz5iY0btEuBlexfv5hHrQHLt31Slh81Pt2QzAfkyMFeZLS3EmRKoirLRP9iWST4LZvsK7iRZtmifKyeYlXhVZ0+KscccijUDuxrdbwqHroJHvImZFHLMFxsYSpJskMxTZQNzHS+XvQx24Q3CXkfTKhnA2XLdBlnTHwQsfkxuLCltfCCjBSfzGj5rqnmEE2Ki0Lu5wNh7Km5/+GDzs18Fp1w1fIcj93pNA/fQZDlX6qUMKwRG3BQbeD2f4O7emWh163TNDeTqXGRjcjlQE5r+cMRNcqOs8WnyVddkKXZYJ2kWjayP6z12d4FpRjDApN2yguTE09wZtUdqZQFXQjPt+AT3V7hnPywA7Oh8pT86APrZHvC/SmUcLIF6MEB3yIHpu6CkKxuBuRGxoTgs/ApYOuhDBaeYzp0GmL4uEvo5BqFqn/Dcq9aHBr51X+Q7v0t5e8qWrAvfAHEP4gQZNXJ4o7jnAzQk0Abs3EfsVWlUEKxw7eUHexf8yTD1tyfrOTsXkl1S9LZKqZsmqXsyK5bhoV6FhJnoQcoM4A6mTDAlD5wKL3CeTgGZK3oxrLdwq7orFTK9Zc32wigfZuhhy29S5gbhC5yvICb+cCqedyR22ALIilcmfd8npUfX07EMYsUC5pkIv/4+4+UFztNJoioayb4/ER+6sS/M4Sd/LECzbiBsiKQsfdDljrDAXSjpBc7TiewWYftIJ0CKPk5DSWq/15GOhnN4k4tqkDwVn5p1Ff5vV3f7gmN6gfMF1PdW2OF9vRc0U3mFELglMcCpJYc+BNREY3uNUFQe6rbfAZwgTOI4+L/0o+slzYwv2c+VIjbmNN0GnD1r0XSNJu6Jp9/vYjTQdwBHjqFtrx7vD/5vTaGwLs8APahWudMCDfsngNXSPZmMD3aF/w7gUJ/ZStz2U2gWyONuWslciPwE3UNu/T2ItsK5hcs7toDaZJBNtcwPNh7/PuAogl9LEfcBN2Y/OaCKDjD5vPq+axcq/E/fma6yowzO68OchbzIla3Rxh94874POK7Q5/4kzf0yjVuVE7DqL/ixiGeR0rlA7XCzWrpFU+i6dFtvtiC+33047b8POMtmcJCpdSLm7MzAyXoxb+M7gwPMMKS7MVPz30PAyGRniuVPZZQ85bepf5cwOE4x1iTIHXGB6BQct16Ioe9vDQ4YNrsloR4fDz+lArKcvLNeYkZ/6mfn72lc6JZAq/cF3lub4CRomFNw8gochBDeBJzvu3au7EsvZtkWffzbOYxfS1G9qnc8TSiBk16VN4bcncaxNQUHWpInpHWM4BxQkQ9WNXwTWthLLkF+btb8PbIn2uUYfiYUvEVFJGyfNQHHvkaFmFUzgKPnyy/+kfb/nzQD54plaDpmgF5EJkAchPG4w+U3lzn//jQFh6YUlKNNSoE/6cAAAACUSURBVMLYGmMG5KI9JrlFL3C+llooioqOcDHjOLAukprJfs2rJDq2fB5U7XSeY/2ip5JVr3bjipakiIl2EBdsK552Va9PNGgFvIJuW9gXzIezrOvg26poL3rRi170ohe96EUvetGLXvSiF73oRS960Yte9KIXvehF34lkSfydWnpmODH5CVsJ/6LteOL926RvH6j5XzvpJAGTd87eAAAAAElFTkSuQmCC" alt="background image">
+    <div class="content">
+	<table align="center"     width="30">
+		<tr>	
+	<td><h1><center>SJCET</center></h1></td>
+			</tr>
+				</table>
+			<table align="center"  width="605">
+	<tr><td><h2><center>Computer Science Department</center></h2></td></tr>
+		</table>
+		<meta charset ="utf-8"/></head><body>
+	<table align="center" border="border"  cellspacing="0.2" cellpadding="0.2" width="40%"><tr>
+		<th colspan="4"><h4>STUDENTS TIME TABLE S6 B.TECH. <center>(2018 BATCH)</center></h4></th>
+</tr>
+<tr>
+		<th colspan="4"><h4><center>(WITH EFFECT FROM 22/03/2021)</center></h4></th>
+</tr>
+<tr>
+		<td><th><h4><center>Time</center></h4></th>
+	<th><h4><center>D(CS-A)</center></h4></th>
+	<th><h4><center>D(CS-B)</center></h4></th>
+</td>
+</tr>
+<tr>
+		<th rowspan="7"><h4><center>MON</center></h4></th>
+</tr>
+<tr >
+		<td><h4><center>09.00-09.45</center></h4></th>
+	<th colspan="2"><h4><center>WT</center><center><a href="https://meet.google.com/kjc-utkv-fit" target="_blank">A</a>//<a href="http://meet.google.com/zvx-nnoc-vwy" target="_blank">B</a></center> </th>
+</td>
+		</tr>
+<tr>
+		<td><h4><center>09.45-10.30</center></h4></th>
+	<th><h4><center><a href ="https://meet.google.com/qpp-thuc-rnk" target="_blank">POM(JG)</a></center> </h4></th>
+	<th><h4><center><a href="https://meet.google.com/kym-sjbd-zfc" target="_blank">SEPM(DS)</a></center> </h4></th>
+</td>
+	</tr>
+<tr>
+		<td><h4><center>10.30-11.15</center></h4></th>
+	<th><h4><center><a href="https://meet.google.com/fwe-seno-zbb" target="_blank">CN(KS)</a></center> </h4></th>
+	<th><h4><center><a href="http://meet.google.com/ijc-cyoq-xye" target="_blank">CN(AT)</a></center> </h4></th></td>
+	</tr>
+<tr>
+		<td><h4><center>11.30-12.15</center></h4></th>	<th rowspan="2"><h4><center>COPRE(CMS,JG)</center> </th>
+	<th><h4><center><a href="http://meet.google.com/gqg-uhmp-ses" target="_blank">CD(JKT)</a></center> </h4></th></td>
+		</tr>
+<tr>
+		<td><h4><center>12.15.00-01.00</center></h4></th>
+	<th colspan="2"><h4><center> <a href="https://meet.google.com/huw-ifdu-hgp?hs=224" target="_blank">PLACEMENT(JG,BR)</a></center>
+ </th>
+</tr>
+<tr bgcolor=" grey" >
+		<th  colspan="3"><h4><center>   </center></h4></th>
+	</tr>
+<tr>
+		<th rowspan="7"><h4><center>TUE</center></h4></th></tr><tr >
+		<td><h4><center>09.00-09.45</center></h4></th>
+	<th><h4><center><a href="http://meet.google.com/acp-wdvk-rbb" target="_blank">DAA(GG)</a></center> </th>
+	<th ><h4><center><a href="https://meet.google.com/iqi-qyvm-zhv" target="_blank">DAA(PVJ)</a></center> </th></td>
+		</tr>
+<tr>
+		<td><h4><center>09.45-10.30</center></h4></th>
+	<th><h4><center><a href ="http://meet.google.com/tuz-ehco-wen" target="_blank">SEPM(MTV)</a></center> </h4></th>
+	<th rowspan="2"><h4><center>COPRE(CMS,JG)</center> </h4></th></td>
+	</tr>
+<tr>
+		<td><h4><center>10.30-11.15</center></h4></th>
+	<th ><h4><center><a href="https://meet.google.com/scr-cenw-zqf" target="_blank">CD(JKT)</a></center> </th></td>
+
+			</tr>
+<tr>
+		<td><h4><center>11.30.00-12.15</center></h4></th>
+	<th ><h4><center><a href="https://meet.google.com/fwe-seno-zbb" target="_blank">CN(KS)</a></center> </th>
+	<th ><h4><center><a href="https://meet.google.com/huw-ifdu-hgp?hs=224" target="_blank">POM(BR)</a></center> </th></td></tr><tr>
+		<td><h4><center>12.00-01.00</center></h4></th>	<th colspan="2"><h4><center>WT </center><center><a href="https://meet.google.com/kjc-utkv-fit" target="_blank">A</a>//<a href="http://meet.google.com/zvx-nnoc-vwy" target="_blank">B</a></center> </th></td>
+</tr>
+<tr bgcolor=" grey" >
+		<th  colspan="3"><h4><center>  </center></h4></th>
+	</tr>
+ <tr>		<th rowspan="7"><h4><center>WED</center></h4></th></tr><tr >
+		<td><h4><center>09.00-09.45</center></h4></th>	<th><h4><center><a href="https://meet.google.com/scr-cenw-zqf" target="_blank">CD(JKT)</a></center> </th>
+	<th ><h4><center><a href="https://meet.google.com/huw-ifdu-hgp?hs=224" target="_blank">POM(BR)</a></center> </th></td>		</tr><tr>		<td><h4><center>09.45-10.30</center></h4></th>	<th><h4><center><a href="https://meet.google.com/scr-cenw-zqf" target="_blank">CD(JKT)</a></center> </h4></th>	<th><h4><center><a href="https://meet.google.com/iqi-qyvm-zhv" target="_blank">DAA(PVJ)</a></center> </h4></th></td>	</tr><tr>		<td><h4><center>10.30-11.15</center></h4></th>	<th  colspan="2"><h4><center>WT </center><center><a href="https://meet.google.com/kjc-utkv-fit" target="_blank">A</a>//<a href="http://meet.google.com/zvx-nnoc-vwy" target="_blank">B</a> </th></td>			</tr><tr>		<td><h4><center>11.30.00-12.15</center></h4></th>	<th ><h4><center><a href="https://meet.google.com/fwe-seno-zbb" target="_blank">CN(KS)</a></center> </th>	<th ><h4><center><a href="http://meet.google.com/gqg-uhmp-ses" target="_blank">CD(JKT)</a></center> </th></td></tr><tr>		<td><h4><center>12.00-01.00</center></h4></th>	<th><h4><center><a href ="https://meet.google.com/qpp-thuc-rnk" target="_blank">PLACEMENT(JG,BR)</a></center> </th>	<th><h4><center><a href="https://meet.google.com/kym-sjbd-zfc" target="_blank">SEPM(DS)</a></center> </th></td></tr><tr bgcolor=" grey" >		<th  colspan="3"><h4><center> HONOUR  </center></h4></th>	</tr>	<tr>		<th rowspan="7"><h4><center>THURS</center></h4></th></tr><tr >		<td><h4><center>09.00-09.45</center></h4></th>	<th><h4><center><a href ="https://meet.google.com/qpp-thuc-rnk" target="_blank">POM(JG)</a></center> </th>
+	<th ><h4><center><a href="http://meet.google.com/ijc-cyoq-xye" target="_blank">CN(AT)</a></center> </th></td>
+		</tr>
+<tr>	
+	<td><h4><center>09.45-10.30</center></h4></th>	<th><h4><center><a href="http://meet.google.com/acp-wdvk-rbb" target="_blank">DAA(GG)</a></center> </h4></th>	<th><h4><center><a href="http://meet.google.com/gqg-uhmp-ses" target="_blank">CD(JKT)</a></center> </h4></th></td>
+	</tr>
+<tr>
+		<td><h4><center>10.30-11.15</center></h4></th>
+	<th ><h4><center><a href ="http://meet.google.com/tuz-ehco-wen" target="_blank">SEPM(MTV)</a></center> </th>
+	<th ><h4><center><a href="https://meet.google.com/huw-ifdu-hgp?hs=224" target="_blank">POM(BR)</a></center> </th></td>
+	</td>
+			</tr>
+<tr>
+		<td><h4><center>11.30.00-12.15</center></h4></th>
+	<th  colspan="2"><h4><center>WT </center>
+               <center><a href="https://meet.google.com/kjc-utkv-fit" target="_blank">A</a>//<a href="http://meet.google.com/zvx-nnoc-vwy" target="_blank">B</a></center> </th></td>
+</tr>
+<tr>
+		<td><h4><center>12.00-01.00</center></h4></th>
+	<th><h4><center><a href="https://meet.google.com/scr-cenw-zqf" target="_blank">CD(JKT)</a></center> </th>
+	<th><h4><center><a href="https://meet.google.com/iqi-qyvm-zhv" target="_blank">DAA(PVJ)</a></center> </th></td></tr><tr bgcolor=" grey" >
+		<th  colspan="3"><h4><center> HONOUR  </center></h4></th>
+	</tr>	<tr>		<th rowspan="7"><h4><center>FRI</center></h4></th>
+</tr>
+<tr >
+		<td><h4><center>09.00-09.45</center></h4></th>
+	<th><h4><center><a href="http://meet.google.com/acp-wdvk-rbb" target="_blank">DAA(GG)</a></center> </th>	<th ><h4><center><a href="http://meet.google.com/gqg-uhmp-ses" target="_blank">CD(JKT)</a></center> </th></td>		</tr><tr>		<td><h4><center>09.45-10.30</center></h4></th>	<th><h4><center><a href ="https://meet.google.com/qpp-thuc-rnk" target="_blank">POM(JG)</a></center> </h4></th>	<th><h4><center><a href="https://meet.google.com/kym-sjbd-zfc" target="_blank">SEPM(DS)</a></center> </h4></th></td>	</tr><tr>		<td><h4><center>10.30-11.15</center></h4></th>	<th><h4><center><a href ="http://meet.google.com/tuz-ehco-wen" target="_blank">SEPM(MTV)</a></center> </h4></th>	<th><h4><center><a href="http://meet.google.com/ijc-cyoq-xye" target="_blank">CN(AT)</a></center> </h4></th	</td>			</tr><tr>		<td><h4><center>11.30.00-12.15</center></h4></th>	<th ><h4><center><a href ="https://meet.google.com/qpp-thuc-rnk" target="_blank">PLACEMENT(JG,BR)</a></center> </th>	<th ><h4><center><a href="https://meet.google.com/iqi-qyvm-zhv" target="_blank">DAA(PVJ)</a></center> </th></td>
+</tr>
+<tr>
+		<td><h4><center>12.00-01.00</center></h4></th>
+	<th><h4><center><a href="http://meet.google.com/acp-wdvk-rbb" target="_blank">DAA(GG)</a></center> </th>
+	<th><h4><center><a href="https://meet.google.com/huw-ifdu-hgp?hs=224" target="_blank">PLACEMENT(JG,BR)</a></center> </th></td></tr><tr bgcolor=" grey" >
+		<th  colspan="3"><h4><center> HONOUR  </center></h4></th>
+	</tr>
+	<tr>
+		<th rowspan="7"><h4><center>SAT</center></h4></th>
+</tr>
+<tr >
+		<td><h4><center>09.00-09.45</center></h4></th>
+	<th><h4><center><a href ="http://meet.google.com/tuz-ehco-wen" target="_blank">SEPM(MTV)</a></center> </th>
+	<th ><h4><center><a href="https://meet.google.com/kym-sjbd-zfc" target="_blank">SEPM(DS)</a></center> </th></td>
+		</tr>
+<tr>
+		<td><h4><center>09.45-10.30</center></h4></th>	<th><h4><center><a href="https://meet.google.com/scr-cenw-zqf" target="_blank">CD(JKT)</a></center> </h4></th>	<th><h4><center><a href="https://meet.google.com/huw-ifdu-hgp?hs=224" target="_blank">POM(BR)</a></center> </h4></th></td>
+	</tr>
+<tr>
+		<td><h4><center>10.30-11.15</center></h4></th>	<th><h4><center><a href="https://meet.google.com/fwe-seno-zbb" target="_blank">CN(KS)</a></center> </h4></th>	<th><h4><center><a href="http://meet.google.com/ijc-cyoq-xye" target="_blank">CN(AT)</a></center> </h4></th></td>
+			</tr>
+<tr>
+		<td><h4><center>11.30.00-12.15</center></h4></th>
+	<th ><h4><center><a href ="https://meet.google.com/qpp-thuc-rnk" target="_blank">POM(JG)</a></center> </th>
+	<th ><h4><center><a href="http://meet.google.com/gqg-uhmp-ses" target="_blank">CD(JKT)</a></center> </th></td>
+</tr>
+<tr>
+		<td><h4><center>12.00-01.00</center></h4></th>
+	<th><h4><center><a href="http://meet.google.com/acp-wdvk-rbb" target="_blank">DAA(GG)</a></center> </th>
+	<th><h4><center><a href="https://meet.google.com/iqi-qyvm-zhv" target="_blank">DAA(PVJ)</a></center> </th></td></tr><tr bgcolor=" grey" >
+		<th  colspan="3"><h4><center>   </center></h4></th>
+	</tr>
+</table>
+</div>
+</body>
+</html>
